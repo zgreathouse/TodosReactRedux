@@ -1,9 +1,13 @@
 import React from 'react';
+import { Provider } from 'react-redux';
 
-const Root = () => (
-  <div>
-    <h1>React is working</h1>
-  </div>
-)
+//components
+import App from './app';
+
+const Root = ({store}) => (
+  <Provider store={store}>
+    <App/>
+  </Provider>
+);
 
 export default Root;

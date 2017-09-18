@@ -13,11 +13,10 @@ import {
 
 document.addEventListener('DOMContentLoaded', () => {
   const store = configureStore();
-  window.store = store;
-  window.receiveTodo = receiveTodo;
-  window.receiveTodos = receiveTodos;
-  window.removeTodo = removeTodo;
-
+  // window.store = store;
+  // window.receiveTodo = receiveTodo;
+  // window.receiveTodos = receiveTodos;
+  // window.removeTodo = removeTodo;
   ReactDOM.render(<Root store={store}/>, document.getElementById('content'));
 });
 
