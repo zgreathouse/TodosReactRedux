@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 //components
-import TodosListItem from './todos_list_item';
+import TodoListItem from './todo_list_item';
 import TodosForm from './todos_form';
 
 class TodosList extends Component {
@@ -15,7 +15,7 @@ class TodosList extends Component {
 
     const allTodos = todos.map( todo => {
       return (
-        <TodosListItem
+        <TodoListItem
           key={`todo-list-item${todo.id}`}
           todo={todo}
           receiveTodo={receiveTodo}
@@ -36,5 +36,3 @@ class TodosList extends Component {
 }
 
 export default TodosList;
-
-/* <li key={todo.id}>{todo.title}</li> */
