@@ -24,12 +24,21 @@ class TodosList extends Component {
     });
 
     return (
-      <div>
-        <h1>Todos</h1>
-        <ul>
-          {allTodos}
-        </ul>
-        <TodosForm receiveTodo={receiveTodo}/>
+      <div className="outer-container">
+        <div className="container">
+          <h1 className="todos-title">Todos</h1>
+
+          <div className="todo-list-container">
+            <div className="todos-list">
+              {allTodos}
+            </div>
+
+            <div className="todos-form">
+              <TodosForm receiveTodo={receiveTodo}/>
+            </div>
+          </div>
+
+        </div>
       </div>
     );
   }

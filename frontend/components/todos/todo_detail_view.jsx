@@ -1,10 +1,18 @@
 import React, { Component } from 'react';
 
+//components
+import StepsListContainer from '../steps/steps_list_container';
+
 class TodoDetailView extends Component {
   constructor(props) {
     super(props);
 
+    this.state = {
+      steps: false,
+    }
+
     this.handleDelete = this.handleDelete.bind(this);
+    this.toggleSteps = this.toggleSteps.bind(this);
   }
 
   handleDelete(e) {
@@ -14,17 +22,47 @@ class TodoDetailView extends Component {
     result ? removeTodo(todo) : null;
   }
 
+  toggleSteps(e) {
+    e.preventDefault();
+    const { steps } = this.state;
+    this.setState({ steps: !steps});
+  }
+
   render() {
     const { todo, removeTodo } = this.props;
-    const { body, done } = todo;
+    const { body, id, done } = todo;
+    const { steps } = this.state;
 
     const status = todo.done ? 'Finshed' :'Unfinshed';
 
+    let todoSteps;
+
+    if(this.state.steps) {
+      todoSteps = <StepsListContainer todo_id={ id }/>
+    }
+
     return (
-      <div>
-        <p>Body: {body}</p>
-        <p>Status: {status}</p>
-        <button onClick={this.handleDelete}>Delete</button>
+      <div className="todo-detail-container">
+
+        <div className="detail-description">Description:
+          <p className="description">{body}</p>
+        </div>
+
+        <div className="detail-status">
+          <div className="detail-status-title">Status:</div>
+          <div className='status'>{status}</div>
+        </div>
+
+        <div className='detail-buttons'>
+          <button onClick={this.toggleSteps}>
+            {steps ? 'Hide Steps' : 'Steps'}
+          </button>
+
+          <button onClick={this.handleDelete}>Delete</button>
+        </div>
+
+        {todoSteps}
+
       </div>
     );
   }

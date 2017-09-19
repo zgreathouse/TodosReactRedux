@@ -1,0 +1,140 @@
+/********Todo Components*******/
+
+/****TodoList Component****/
+.outer-container {
+  background-color: #EEE;
+  margin: 0px;
+  height: 47em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 7em;
+  margin-right: 7em;
+  background-color: white;
+  height: 47em;
+}
+
+.todos-title {
+  font-size: 48px;
+  margin: 0px;
+  height: 3em;
+  border-bottom: 1px solid grey;
+  margin: 30px;
+}
+
+.todo-list-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.todos-list {
+  width: 30em;
+  padding: 70px;
+  margin-bottom: 100px;
+}
+
+.todos-form {
+  width: 35em;
+  margin-bottom: 100px;
+}
+
+/****TodoListItem Component****/
+.todo-item-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  width: 500px;
+  border-bottom: .7px solid grey;
+}
+
+.todo-title {
+  font-size: 26px;
+  color: grey;
+}
+
+.todo-title:hover {
+  color: lightgrey;
+  cursor: pointer;
+}
+
+/****TodoDetailView Component****/
+
+.todo-detail-container {
+  display: flex;
+  flex-direction: column;
+  border-bottom: .7px solid grey;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  width: 500px;
+}
+
+.detail-description {
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.description {
+  margin-left: 20px;
+  font-weight: normal;
+}
+
+.detail-status {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  width: 120px;
+}
+
+.detail-status-title {
+  font-weight: bold;
+}
+
+.status {
+  margin-left: 5px;
+}
+
+.detail-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 500px;
+}
+
+/****TodoForm Component****/
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.todo-form-item {
+  margin-top: 15px;
+}
+
+.title-label {
+  font-size: 24px;
+}
+
+.title-input {
+  height: 2em;
+  width: 20em;
+  font-size: 16px;
+  margin-left: 15px;
+}
+
+.body-label {
+  font-size: 24px;
+}
+
+.body-input {
+  height: 2em;
+  width: 20em;
+  font-size: 16px;
+  margin-left: 8px;
+}

@@ -7,15 +7,31 @@ import {
 const initialState = {
   1: { // this is the step with id = 1
     id: 1,
-    title: 'walk to store',
+    title: 'Step 1',
+    body: 'Description',
     done: false,
     todo_id: 1
   },
-  2: { // this is the step with id = 2
+  2: { // this is the step with id = 1
     id: 2,
-    title: 'buy soap',
+    title: 'Step 2',
+    body: 'Description',
     done: false,
     todo_id: 1
+  },
+  3: { // this is the step with id = 2
+    id: 3,
+    title: 'Step 1',
+    body: 'Description',
+    done: false,
+    todo_id: 2
+  },
+  4: { // this is the step with id = 2
+    id: 4,
+    title: 'Step 2',
+    body: 'Description',
+    done: false,
+    todo_id: 2
   }
 };
 

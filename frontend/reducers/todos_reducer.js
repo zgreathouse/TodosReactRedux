@@ -7,14 +7,14 @@ import {
 const initialState = {
   1: {
     id: 1,
-    title: 'Save the world before bedtime',
-    body: 'Sugar, Spice, and Everything Nice',
+    title: 'Todo 1',
+    body: 'Description',
     done: false
   },
   2: {
     id: 2,
-    title: 'Get it memorized',
-    body: 'Listen to Axel',
+    title: 'Todo 2',
+    body: 'Description',
     done: true
   },
 }

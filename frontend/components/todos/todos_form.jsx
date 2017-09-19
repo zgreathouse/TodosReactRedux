@@ -40,26 +40,32 @@ class TodosForm extends Component {
 
     return (
       <form className='todo-form' onSubmit={this.handleSubmit}>
-        <label>Title:
-          <input
-            className='title-input'
-            ref='title'
-            value={title}
-            placeholder='New Todo'
-            onChange={this.update('title')}
-            required/>
-        </label>
-        <label>Body:
-          <textarea
-            className='body-input'
-            ref='body'
-            cols='30'
-            value={body}
-            placeholder='Description'
-            onChange={this.update('body')}
-            required></textarea>
-        </label>
-        <button className='create-todo-button'>Create Todo!</button>
+        <div className="todo-form-item">
+          <label className='title-label'>
+            Title:
+            <input
+              className='title-input'
+              ref='title'
+              value={title}
+              placeholder='New Todo'
+              onChange={this.update('title')}
+              required/>
+          </label>
+        </div>
+        <div className="todo-form-item">
+          <label className='body-label'>
+            Body:
+            <input
+              className='body-input'
+              ref='body'
+              cols='30'
+              value={body}
+              placeholder='Description'
+              onChange={this.update('body')}
+              required/>
+          </label>
+        </div>
+        <button className='create-button'>Submit</button>
       </form>
     );
   }

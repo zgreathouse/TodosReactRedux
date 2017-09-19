@@ -41,8 +41,13 @@ class TodoListItem extends Component {
 
     return (
       <div>
-        <h3 onClick={this.toggleDetail}>{title}</h3>
-        <button onClick={this.toggleTodo}>{done ? 'Undo' : 'Done'}</button>
+        <div className="todo-item-container">
+          <h3 className='todo-title'
+            onClick={this.toggleDetail}>{title}</h3>
+          <button onClick={this.toggleTodo}
+            className="toggle-todo-button">
+            {done ? 'Undo' : 'Done'}</button>
+        </div>
         {detail}
       </div>
     );

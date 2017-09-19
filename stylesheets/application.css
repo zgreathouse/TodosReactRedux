@@ -1,0 +1,85 @@
+/********RESET********/
+html, h1, ul, li, strong, main, button,
+div, h2, p, form, label, input, textarea {
+  font-family: "sans-serif";
+  transition: all 0.5s;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+button {
+  width: 80px;
+  height: 24px;
+  font-size: 13px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: lightgrey;
+}
+
+.create-button {
+  width: 400px;
+  height: 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 18px;
+  background-color: lightgrey;
+}
+
+
+/********Step Components********/
+
+/****StepList Component/****/
+.steps-list-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.steps-list {
+  font-size: 16px;
+  margin-left: 45px;
+}
+
+
+/****StepListItem Component/****/
+.step-item-container {
+  border-top: .3px solid grey;
+  padding-bottom: 20px;
+}
+
+.step-title-and-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.step-title {
+  font-size: 20px;
+}
+
+.toggle-step-button {
+  width: 80px;
+  height: 24px;
+  font-size: 13px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: lightgrey;
+}
+
+.details {
+  margin-bottom: 20px;
+}
+
+/****StepForm Component/****/
+
+.step-form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 45px;
+  border-top: .3px solid grey;
+  padding-top: 40px;
+}
